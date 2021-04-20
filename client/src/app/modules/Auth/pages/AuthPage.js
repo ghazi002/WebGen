@@ -21,7 +21,7 @@ export function AuthPage() {
             <div
                 className="login-aside d-flex flex-row-auto bgi-size-cover bgi-no-repeat p-10 p-lg-10"
                 style={{
-                  backgroundImage: `url(${toAbsoluteUrl("/media/bg/bg-4.jpg")})`
+                  backgroundImage: `url(${toAbsoluteUrl("/media/bg/bg-aut.jpg")})`
                 }}
             >
               {/*begin: Aside Container*/}
@@ -38,34 +38,16 @@ export function AuthPage() {
 
                 {/* start:: Aside content */}
                 <div className="flex-column-fluid d-flex flex-column justify-content-center">
-                  <h3 className="font-size-h1 mb-5 text-white">
-                    Welcome to Metronic!
+                  <h3 className="font-size-h1 info">
+                    Welcome to WEBGEN
                   </h3>
                   <p className="font-weight-lighter text-white opacity-80">
-                    The ultimate Bootstrap & React 16 admin theme framework for next
-                    generation web apps.
+                    The WebGen website which will help you to make your life easier and create your sites easily .
                   </p>
                 </div>
                 {/* end:: Aside content */}
 
-                {/* start:: Aside footer for desktop */}
-                <div className="d-none flex-column-auto d-lg-flex justify-content-between mt-10">
-                  <div className="opacity-70 font-weight-bold	text-white">
-                    &copy; 2020 Metronic
-                  </div>
-                  <div className="d-flex">
-                    <Link to="/terms" className="text-white">
-                      Privacy
-                    </Link>
-                    <Link to="/terms" className="text-white ml-10">
-                      Legal
-                    </Link>
-                    <Link to="/terms" className="text-white ml-10">
-                      Contact
-                    </Link>
-                  </div>
-                </div>
-                {/* end:: Aside footer for desktop */}
+               
               </div>
               {/*end: Aside Container*/}
             </div>
@@ -95,31 +77,7 @@ export function AuthPage() {
               </div>
               {/*end::Content body*/}
 
-              {/* begin::Mobile footer */}
-              <div
-                  className="d-flex d-lg-none flex-column-auto flex-column flex-sm-row justify-content-between align-items-center mt-5 p-5">
-                <div className="text-dark-50 font-weight-bold order-2 order-sm-1 my-2">
-                  &copy; 2020 Metronic
-                </div>
-                <div className="d-flex order-1 order-sm-2 my-2">
-                  <Link to="/terms" className="text-dark-75 text-hover-primary">
-                    Privacy
-                  </Link>
-                  <Link
-                      to="/terms"
-                      className="text-dark-75 text-hover-primary ml-4"
-                  >
-                    Legal
-                  </Link>
-                  <Link
-                      to="/terms"
-                      className="text-dark-75 text-hover-primary ml-4"
-                  >
-                    Contact
-                  </Link>
-                </div>
-              </div>
-              {/* end::Mobile footer */}
+             
             </div>
             {/*end::Content*/}
           </div>
