@@ -35,7 +35,6 @@ router.get("/:id", (req, res) => {
 router.post("/", (req, res) => {
   console.log(req.body);
   let newProject = new projects({
-      
     name: req.body.name,
     path: req.body.path,
    
