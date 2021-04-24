@@ -45,7 +45,6 @@ router.get("/findByIdPro/:id", (req, res) => {
 router.post("/", (req, res) => {
   console.log(req.body);
   let newInterface= new interfaces({
-    idInt:req.body.idInt,
     idPro:req.body.idPro,
     path: req.body.path,
    
@@ -58,7 +57,6 @@ router.post("/", (req, res) => {
         msg: `Successfully added!`,
         result: {
           _id: result._id,
-          idInt: result.idInt,
           idPro: result.idPro,
           path: result.path,
         },
@@ -93,7 +91,6 @@ router.delete("/:id", (req, res) => {
         msg: `It has been deleted.`,
         result: {
             _id: result._id,
-            idInt: result.idInt,
             idPro: result.idPro,
             path: result.path,
         },
@@ -106,7 +103,6 @@ router.delete("/:id", (req, res) => {
 
 router.put("/:id", (req, res) => {
   let updatedInterfaces = {
-    idInt:req.body.idInt,
     idPro:req.body.idPro,
     path: req.body.path,
   };
@@ -125,7 +121,6 @@ router.put("/:id", (req, res) => {
             msg: `Successfully updated!`,
             result: {
                 _id: result._id,
-                 idInt: result.idInt,
                  idPro: result.idPro,
                 path: result.path,
             },

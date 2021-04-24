@@ -1,9 +1,7 @@
 const mongoose = require("mongoose");
 
 var interfacesSchema = new mongoose.Schema({
-  idInt: {
-    type: Number,
-  },
+  
   idPro: {
     type: mongoose.Schema.Types.ObjectId,
     ref: "projects",

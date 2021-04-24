@@ -35,7 +35,7 @@ router.get("/:id", (req, res) => {
 router.post("/", (req, res) => {
   console.log(req.body);
   let newProject = new projects({
-    idPro:req.body.idPro,
+      
     name: req.body.name,
     path: req.body.path,
    
@@ -48,7 +48,6 @@ router.post("/", (req, res) => {
         msg: `Successfully added!`,
         result: {
           _id: result._id,
-          idPro: result.idPro,
           name: result.name,
           path: result.path,
         },
@@ -88,7 +87,6 @@ router.delete("/:id", (req, res) => {
         msg: `It has been deleted.`,
         result: {
             _id: result._id,
-            idPro: result.idPro,
             name: result.name,
             path: result.path,
         },
@@ -101,7 +99,6 @@ router.delete("/:id", (req, res) => {
 
 router.put("/:id", (req, res) => {
   let updatedProjects = {
-    idPro:req.body.idPro,
     name: req.body.name,
     path: req.body.path,
    
@@ -121,7 +118,6 @@ router.put("/:id", (req, res) => {
             msg: `Successfully updated!`,
             result: {
                 _id: result._id,
-                idPro: result.idPro,
                 name: result.name,
                 path: result.path,
             },

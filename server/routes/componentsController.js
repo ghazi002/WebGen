@@ -45,7 +45,6 @@ router.get("/findByIdInt/:id", (req, res) => {
 router.post("/", (req, res) => {
   console.log(req.body);
   let newComponents = new components({
-    idComp:req.body.idComp,
     idInt:req.body.idInt,
     posX:req.body.posX,
     posY: req.body.posY,
@@ -61,7 +60,6 @@ router.post("/", (req, res) => {
         msg: `Successfully added!`,
         result: {
             _id: result._id,
-            idComp:result.idComp,
             idInt:result.idInt,
             posX:result.posX,
             posY:result.posY,
@@ -117,7 +115,6 @@ router.delete("/:id", (req, res) => {
         msg: `It has been deleted.`,
         result: {
                  _id: result._id,
-                 idComp:result.idComp,
                  idInt:result.idInt,
                  posX:result.posX,
                  posY:result.posY,
@@ -133,7 +130,6 @@ router.delete("/:id", (req, res) => {
 
 router.put("/:id", (req, res) => {
   let updatedComponents = {
-    idComp:req.body.idComp,
     idInt:req.body.idInt,
     posX:req.body.posX,
     posY: req.body.posY,
@@ -155,7 +151,6 @@ router.put("/:id", (req, res) => {
             msg: `Successfully updated!`,
             result: {
                 _id: result._id,
-                 idComp:result.idComp,
                  idInt:result.idInt,
                  posX:result.posX,
                  posY:result.posY,
